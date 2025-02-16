@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="style.css" rel="stylesheet">
+        <script src="index.js"></script>
+
+    </head>
+
+    <body>
+        <div id = "page1" class="page-active">
+            <div class="header">
+                Hello!, Welcome to my humble "Quiz Generator". Please fill in the form under to generate a quiz however way suits you! 
+            </div>
+            <form class="GUI" onsubmit="submission(event)">
+                
+                <div class="label-input">
+                    <label for="amount" class="page1labels">Choose the number of questions:</label>
+                    <input type="number" id="amount" min="1" max="50" class="page1inputs">
+                </div>
+            
+                
+                <div class="label-input">
+                    <label for="category" class="page1labels">Category:</label>
+                    <select id="category" name="category" class="page1inputs">
+                        <option value="0">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Entertainment: Books</option>
+                        <option value="11">Entertainment: Film</option>
+                        <option value="12">Entertainment: Music</option>
+                        <option value="13">Entertainment: Musicals & Theatres</option>
+                        <option value="14">Entertainment: Television</option>
+                        <option value="15">Entertainment: Video Games</option>
+                        <option value="16">Entertainment: Board Games</option>
+                        <option value="17">Science & Nature</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                        <option value="28">Vehicles</option>
+                        <option value="29">Entertainment: Comics</option>
+                        <option value="30">Science: Gadgets</option>
+                        <option value="31">Entertainment: Japanese Anime & Manga</option>
+                        <option value="32">Entertainment: Cartoon & Animations</option>
+                    </select>
+                </div>
+            
+                
+                <div class="label-input">
+                    <label for="difficulty" class="page1labels">Difficulty:</label>
+                    <select id="difficulty" name="difficulty" class="page1inputs">
+                        <option value="0">Any Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            
+                
+                <div class="label-input">
+                    <label for="type" class="page1labels">Type of Questions:</label>
+                    <select id="type" name="type" class="page1inputs">
+                        <option value="0">Any Type</option>
+                        <option value="multiple">Multiple Choice</option>
+                        <option value="boolean">True/False</option>
+                        
+                    </select>
+                </div>
+            
+                <button type="submit" id="generatebutton">Generate Quiz</button>
+            </form>
+
+            
+            
+
+
+
+
+
+
+
+            </form>
+
+
+        </div>
+
+        <div id="page2" class="page-nonactive">
+            <div id="timer_first"></div>
+            
+        </div>
+
+        <div id="page3" class="page-nonactive">
+            <div> Score: </div>
+            
+            
+
+        </div>
+
+        
+    </body>
+
+
+    
+</html>
+
+
+
+
